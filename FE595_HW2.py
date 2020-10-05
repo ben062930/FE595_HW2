@@ -14,7 +14,7 @@ def webscraper():
                 if (content[0] == 'Name') or (content[0] == 'Purpose'):
                     res.append(content)
         except:
-            res = ['error']
+            return('error')
 
     with open("output.txt", 'w') as out_file:
         for t in range(len(res)):
@@ -22,7 +22,7 @@ def webscraper():
             res2 += str(res[t])
             res2 += "\n"
             out_file.write(res2)
-            time.sleep(0.5)
+            time.sleep(0.5)#0.5s to slow down the function.
 
 if __name__ == "__main__":
     webscraper()

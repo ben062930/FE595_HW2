@@ -24,5 +24,5 @@ def webscraper():
             out_file.write(res2)
             time.sleep(0.5)#0.5s to slow down the function.
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     webscraper()
